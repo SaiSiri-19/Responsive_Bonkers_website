@@ -1,0 +1,28 @@
+.footer {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .rect {
+    position: relative;
+    width: 100%;
+    height: 255px;
+    bottom: 0%;
+    padding-top: 170px;
+  }
+  
+ 
+  h2 {
+    font-weight: bold;
+  }
+
+  
+  .overlayText {
+    position: absolute;
+    bottom: 1ch; /* Adjust as needed */
+    left: 40%; /* Adjust as needed */
+    color: black; /* Adjust color for visibility */
+    font-size: 1.8rem; /* Adjust size as needed */
+    font-weight: 800;
+  }

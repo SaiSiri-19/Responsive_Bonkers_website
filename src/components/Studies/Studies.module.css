@@ -1,0 +1,147 @@
+.container {
+  position: relative; /* Needed for absolute positioning of bowl and fact images */
+  display: flex;
+  justify-content: center;
+  padding-top: 260px;
+}
+
+.bowl {
+  position: absolute;
+  top: 100px; /* Adjust this value to control overlap */
+  width: 600px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.rectangle {
+  width: 100%; /* Adjust size as needed */
+  height: 650px; /* Adjust height as needed */
+  
+}
+
+.factImages {
+  position: absolute;
+  top: 490px; /* Adjust position as needed */
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Adjust width as needed */
+  padding: 0 50px; /* Adjust padding as needed */
+  
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 45%; /* Adjust width as needed */
+  margin: 0 10px; /* Add margin between columns */
+  margin-left: 10%;
+}
+
+
+.factImage {
+  width: 50px; /* Adjust size as needed */
+  margin-bottom: 10px; /* Space between image and paragraph */
+}
+
+.factImage1, .factImage3 {
+  margin-top: 0; /* No extra space above the first images */
+  position: relative; /* Enables the use of top property */
+  top: -20px;
+}
+
+.factImage2, .factImage4 {
+  margin-top: 30px; /* Add space above the second fact images */
+  position: relative; /* Enables the use of top property */
+  top: -20px;
+}
+
+p {
+  text-align: justify;
+  font-family: 'Inter', 'Sans-serif';
+  font-weight: 600;
+  font-size: 85%;
+  margin-bottom: 10px; /* Space below each paragraph */
+  position: relative; /* Enables the use of top and left properties */
+  top: -25px; /* Moves the paragraph up */
+  left: -10px;
+}
+
+
+@media (min-width: 1024px) { /* Tailwind's `lg` breakpoint */
+  .rectangle {
+    height: 620px; /* Height for large screens and above */
+  }
+}
+
+@media (min-width: 1280px) { /* Tailwind's `xl` breakpoint */
+  .rectangle {
+    height: 530px; /* Height for extra-large screens and above */
+  }
+}
+
+@media (min-width: 768px) {
+  .rectangle {
+    height: 620px;
+  }
+}
+
+@media (min-width: 640px) {
+  .rectangle {
+    height: 720px;
+  }
+}
+
+@media (min-width: 1024px) { /* Tailwind's `lg` breakpoint */
+  p {
+    font-size: 20px; /* Height for large screens and above */
+  }
+}
+
+@media (min-width: 768px) { /* Tailwind's `lg` breakpoint */
+  p {
+    font-size: 15.3px; /* Height for large screens and above */
+  }
+}
+
+@media (min-width: 1280px) { /* Tailwind's `lg` breakpoint */
+  p {
+    font-size: 20px; /* Height for large screens and above */
+  }
+}
+
+@media (min-width: 1280px) { /* Tailwind's `lg` breakpoint */
+  .factImage1{
+    height: 40px; /* Height for large screens and above */
+    width: 80px;
+  }
+  .factImage2{
+    height: 40px; /* Height for large screens and above */
+    width: 80px;
+  }
+  .factImage3{
+    height: 40px; /* Height for large screens and above */
+    width: 80px;
+  }
+  .factImage4{
+    height: 40px; /* Height for large screens and above */
+    width: 80px;
+  }
+}
+
+@media (min-width: 768px) { /* Tailwind's `lg` breakpoint */
+  .factImage1{
+    height: 30px; /* Height for large screens and above */
+    width: 70px;
+  }
+  .factImage2{
+    height: 30px; /* Height for large screens and above */
+    width: 70px;
+  }
+  .factImage3{
+    height: 30px; /* Height for large screens and above */
+    width: 70px;
+  }
+  .factImage4{
+    height: 30px; /* Height for large screens and above */
+    width: 70px;
+  }
+}

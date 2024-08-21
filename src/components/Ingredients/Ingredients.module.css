@@ -1,0 +1,13 @@
+.arange {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    margin-top: 0px; /* Move the images a bit down */
+  }
+  
+  .image {
+    width: 325px; /* Adjust the size of the images */
+    height: 530px; /* Adjust the size of the images */
+    margin: 0 10px; /* Add some space between the images */
+    padding-top: 8%;
+  }
+  

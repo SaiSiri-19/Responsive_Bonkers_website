@@ -1,0 +1,10 @@
+/* App.module.css */
+.appContainer {
+    position: relative;
+  }
+
+  
+  .content {
+    padding-top: 60px; /* Adjust based on navbar height */
+  }
+  
